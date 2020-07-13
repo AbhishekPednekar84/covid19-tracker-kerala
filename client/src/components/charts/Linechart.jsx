@@ -46,12 +46,12 @@ const Linechart = () => {
     {
       name: "Recovered",
       data: timeSeriesLoaded && recoveredSeries,
-      stroke: "#b2ff59",
+      stroke: "#00838f",
     },
     {
       name: "Deceased",
       data: timeSeriesLoaded && deceasedSeries,
-      stroke: "#607d8b",
+      stroke: "#4a148c",
     },
   ];
 
