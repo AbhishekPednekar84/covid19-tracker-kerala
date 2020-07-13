@@ -1,23 +1,23 @@
 language: node_js
 node_js:
-- '12.16'
+  - "12.16"
 addons:
   ssh_known_hosts: 165.22.215.143
 before_install:
-- openssl aes-256-cbc -K $encrypted_82a198b60ea6_key -iv $encrypted_82a198b60ea6_iv
-  -in corona_rsa.enc -out corona_rsa -d
-- chmod 600 corona_rsa
-- mv corona_rsa ~/.ssh/id_rsa
-- cd client
+  - openssl aes-256-cbc -K $encrypted_82a198b60ea6_key -iv $encrypted_82a198b60ea6_iv
+    -in corona_rsa.enc -out corona_rsa -d
+  - chmod 600 corona_rsa
+  - mv corona_rsa ~/.ssh/id_rsa
+  - cd client
 install:
-- npm install
+  - npm install
 script:
-- 'true'
+  - "true"
 after_success:
-- npm run build
-- cd ..
-- bash ./deploy.sh
+  - npm run build
+  - cd ..
+  - bash ./deploy.sh
 notifications:
   slack:
     rooms:
-      secure: AyWSsztDMAW/+QdhqqTDEEqAAnWcJTmkF0nZJCAgfTp9AVw+Dv8KbscsSxi09IYulRnTYG4gd/4e5jkyGIZ74tzl7rDTOmUlaZoKUxLh0adFGsSvXgUxjgVxW4xXvdXU6w06rgt0UtGdTiROBC0aoJZ3B8kH1fFP5XCZHXo5vMFFexSO/0gCe28p+G6T4R2ZW75SpBqXqPd1pW0gBhsDeULF7jUJQDhu7t/46G76tJ7VeL6eHbEhyayYS6SRP/BhVrj76K6WDnLHI19kzOXLzyxY9pJNcAWMCHeqrlqxtEh6SEozCIg7KP6dDEIjAie0GI6dO8L7TePw2ZxmbN4lsDH4SkkirGKmFH4FWNCqjfrHyXZiKL4+BS1kn6t1TTqyVhMYivH3ablIJN9ZVkvOnAMRYKFQ6JtYiS64Fsy8QIxAJcL37JOXQIGZ4Kl5Y0SkN3NO9/S17kAn8RuYZDUc9UTjDcmTbRMTU/LH041WNj0YiUiyyfdyclCM7aXHSvHhgARldZsgHywjKtKWyIYBn6OtmszDm5eNbIqhdfyL/8k9ZJtxKLzJfxzYrXVOS+reNSlwYvT4OWo1rfXxf5dEAcvvS5zIBzlQHfsVDiV3rAHDd9iek0eI733kHXRxlqDSWR2yFwRBb7/bqdcrUfvT981zru0y1yDmtHrFZU7FW2I=
+      secure: O0Chnn5uD2KhkMnnfrH/EWkFjZBbgPgSpy2QlcNfl2rHrphQLSb2v/Nt2dEA4Qu6u/XSAFnaCWpTgSXqsY1diEYE64HaRA2uc0pXlS8n3PK06i8vImgI5FdbiVaUdYQ88FpynCE0+ob2i4IwpWiQtIBtLkBxJ5YUip1cxCN9p7bKxPFn9LHFXNnJHW62KoU6UIC04IaBg6OlqLjk3WbQ4l/oxjdy9P6MLJs+/xQZRyicvTIQs2rSVvf7d2XSv9GOQqYX87s1Cy7/CbuDvR7yPyEe7tx2xlZImwAKz38D/t+HFle0jRL8PMZsE1vchr2NqxGK5Z2oFJwAWUSk9yvl55zDLUXAAWFsaV21+rbndY4yDAx3Q/3CZjxkMippqqJSYRQooJVDXXlqR4x1sZA1ZOpRnO89mBBM1G679lBX9563U/vK6rxNR8JmB9MTpv53ANBMl3rROXDT8z0ggGDodqiMYl4f9f9KhppkNXMtpjWgUkv/1Ghl+qw7YEahmDMUcdcrD48ju058vSl5HJvO/xcp2pZ90LdZI+zu3OBj+Y0SJoalTqfwEvZI6Bdse/ZMbQsh+AfMTLWBdXbWDn7iEwA71mWS/2IebWcDHde5DHHqxWD9ThyLLv3pyDMqkmBe/jx3zZ7GpzZpN1BfmbTioZEH7W8BQ6GXyM0UUOAatl0=
