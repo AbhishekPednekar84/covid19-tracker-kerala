@@ -1,5 +1,7 @@
 # [COVID 19 Dashboard for Kerala](https://kl.covid19-info.website)
 
+[![Build Status](https://travis-ci.org/AbhishekPednekar84/covid19-tracker-kerala.svg?branch=master)](https://travis-ci.org/AbhishekPednekar84/covid19-tracker-kerala)
+
 This repository contains the `React.js` code for the **[https://kl.covid19-info.website](https://kl.covid19-info.website)** site.
 
 ## Creating a local setup
