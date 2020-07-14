@@ -33,3 +33,9 @@ To deploy the application on a virtual private server and create a CI/CD pipelin
 ## Customization
 
 To customize this site for a different Indian state/UT, refer to the [wiki](https://github.com/AbhishekPednekar84/covid19-tracker-karnataka/wiki/State-based-Customization).
+
+--- 
+
+## Screenshot
+
+<p align="center"><img src="https://github.com/AbhishekPednekar84/covid19-tracker-kerala/blob/master/client/src/assets/images/screenshot.jpg" alt="screenshot"></p>
