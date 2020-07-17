@@ -120,7 +120,7 @@ const StackedBar = () => {
           <h4 className="center-align">Confirmed cases</h4>
           <ReactFusioncharts
             type="bar3d"
-            width="380"
+            width="300"
             height="450"
             dataFormat="JSON"
             dataSource={dataSourceConfirmed}
@@ -133,7 +133,7 @@ const StackedBar = () => {
           <h4 className="center-align">Active cases</h4>
           <ReactFusioncharts
             type="bar3d"
-            width="380"
+            width="300"
             height="450"
             dataFormat="JSON"
             dataSource={dataSourceActive}
@@ -146,7 +146,7 @@ const StackedBar = () => {
           <h4 className="center-align">Recoveries</h4>
           <ReactFusioncharts
             type="bar3d"
-            width="380"
+            width="300"
             height="450"
             dataFormat="JSON"
             dataSource={dataSourceRecovered}
@@ -159,7 +159,7 @@ const StackedBar = () => {
           <h4 className="center-align">Deaths</h4>
           <ReactFusioncharts
             type="bar3d"
-            width="380"
+            width="300"
             height="450"
             dataFormat="JSON"
             dataSource={dataSourceDeceased}
