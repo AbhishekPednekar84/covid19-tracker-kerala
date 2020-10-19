@@ -96,7 +96,7 @@ const Linechart = () => {
             allowDuplicatedCategory={false}
           />
           <CartesianGrid strokeDasharray="3 3" />
-          <YAxis type="number" domain={["auto", maxValue + 10]} />
+          <YAxis type="number" domain={[0, maxValue + 10]} />
           <Tooltip />
           <Legend />
           {series.map((s) => (
